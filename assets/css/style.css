@@ -1669,7 +1669,7 @@ a.prev:hover, a.next:hover {
     align-items: center;
     z-index: 3;
     width: 100%;
-    margin-top: calc(150vh - 90px - 1690px);
+    margin-top: calc(150vh - 68px - 1690px);
 }
 
 /* Media query para pantallas pequeñas */
