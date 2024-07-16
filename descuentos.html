@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="robots" content="noindex">
+     <meta name="googlebot" content="noindex">
+     <title>Descuentos</title>
+     <meta name="description"
+          content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
+     <meta name="keywords" content="Compartamos Banco">
+     <meta property="og:image" content="assets/img/logo_CB.png">
+     <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+     <meta property="og:description"
+          content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+     <link href="assets/css/style.css?v=7" rel="stylesheet">
+     <link href="assets/css/icons-fonts.css" rel="stylesheet">
+     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+     <!-- Checkbox oculto para controlar el sidebar y el overlay ya que solo usamos css no js -->
+     <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+     <!-- Navbar principal -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="nav-container">
+               <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_CB.png" alt="Logo">
+               </a>
+               <!-- Botón para abrir/cerrar el sidebar -->
+               <button class="menu-button" onclick="toggleSidebar()">
+                    <img src="assets/img/icon/menu-collpasible.png" alt="Menu Icon" class="custom-menu-icon">
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Descuentos cerca de mí</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Favoritos</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Nos interesa tu opinión</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Preguntas frecuentes</a>
+                         </li>
+                         <li class="nav-item transparent-border">
+                              <a class="nav-link icon-list-link " href="tel:8002209000">
+                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
+                                   frecuentes
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+
+     <div class="sidebar">
+          <ul class="navbar-nav sticky-sidebar-close">
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link active" href="#">
+                         <span class="material-symbols-outlined space-link-ico">home</span> Inicio
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">my_location</span> Descuentos cerca de
+                         mí
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">favorite</span> Favoritos
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">insert_chart</span> Nos interesa tu
+                         opinión
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">help</span> Preguntas frecuentes
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link " href="tel:8002209000">
+                         <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
+                         frecuentes
+                    </a>
+               </li>
+               <li class="nav-item close-session-item">
+                    <hr class="hr-second-stape">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">logout</span> Cerrar sesión
+                    </a>
+               </li>
+          </ul>
+     </div>
+
+
+
+     <!-- Overlay, también un div para el checkbox, permitiendo cerrar el sidebar al clickear -->
+     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+     <!-- Contenido principal de la página -->
+     <main class="custom-container-s4 main-section-top">
+          <h2>¡Hola, Rosa!</h2>
+          <div class="image-container mt-4">
+               <img src="assets/img/descuentos/walt-mart.png" alt="Walmart" class="img-fluid">
+               <div class="highlight-badge">
+                    <img src="assets/img/icon/star.png" alt="Star Icon" width="16">
+                    Oferta destacada
+               </div>
+          </div>
+          <div class="col-12 text-center">
+               <div class="space-title">
+                    <h4 class="text-start h4-inter">Explora por categoría</h4>
+               </div>
+               <div class="row select-mrg">
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/despensa.png" class="card-img-top"
+                                             alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Despensa</b></p>
+                              <p class="no-margin left-align sub-card-02">4 ofertas</p>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/negocio.png" class="card-img-top" alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Negocio</b></p>
+                              <p class="no-margin left-align sub-card-02">5 ofertas</p>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/salud.png" class="card-img-top" alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Salud</b></p>
+                              <p class="no-margin left-align sub-card-02">8 ofertas</p>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/eduacacion.png" class="card-img-top"
+                                             alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Educación</b></p>
+                              <p class="no-margin left-align sub-card-02">4 ofertas</p>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/restaurantes.png" class="card-img-top"
+                                             alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Restaurantes</b></p>
+                              <p class="no-margin left-align sub-card-02">12 ofertas</p>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-6 mb-4">
+                         <a href="#">
+                              <div class="card-02 zoom-effect">
+                                   <div class="img-container">
+                                        <img src="assets/img/descuentos/Otros.png" class="card-img-top" alt="event_1">
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="body-content-card">
+                              <p class="no-margin left-align tittle-card-01"><b>Otros</b></p>
+                              <p class="no-margin left-align sub-card-02">6 ofertas</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </main>
+
+     <!-- Footer de la página -->
+     <footer class="footer custom-footer-raised">
+          <div class="container">
+               <div class="row">
+                    <div class="col-12">
+                         <img src="assets/img/logo_CB.png" alt="Logo Compartamos Banco" width="100">
+                    </div>
+                    <div class="col-12">
+                         <img src="assets/img/logos/gentera.png" class="img-fluid img-custom"
+                              alt="Logo Compartamos Banco">
+                    </div>
+                    <div class="col-12">
+                         <div class="footer-terms">
+                              <a href="https://www.compartamos.com.mx/compartamos/regulacion/privacidad"
+                                   target="_blank">Aviso de Privacidad</a>
+                              <p class="vert-line-form"> | </p>
+                              <a href="https://www.compartamos.com.mx/compartamos/regulacion/terminos-y-condiciones"
+                                   target="_blank">Términos y Condiciones</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+</body>
+<!-- aqui va un scrtip el cual ayuda a cambiar el icono de menu por el close (x) para cerrar el sidebar, se elimina script -->
+<script>
+     function toggleSidebar() {
+          var checkbox = document.getElementById('nav-toggle');
+          var menuButton = document.querySelector('.menu-button img');
+
+          if (checkbox.checked) {
+               menuButton.src = 'assets/img/icon/menu-collpasible.png';
+          } else {
+               menuButton.src = 'assets/img/icon/close-sidebar.png';
+          }
+
+          checkbox.checked = !checkbox.checked;
+     }
+
+</script>
+
+</html>

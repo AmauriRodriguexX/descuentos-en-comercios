@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Registro</title>
+    <meta name="description"
+         content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
+    <meta name="keywords" content="Compartamos Banco">
+    <meta property="og:image" content="assets/img/logo_CB.png">
+    <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+    <meta property="og:description"
+         content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css?v=7" rel="stylesheet">
+    <link href="assets/css/icons-fonts.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-forms">
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <div class="text-center mb-3">
+                <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid left-aligned-img" width="100">
+                <br>
+                <br>
+            </div>
+            <h5 class="text-start">Registro</h5>
+            <p class="text-start font-p-forms">Completa la siguiente información.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="cliente" class="form-label d-flex justify-content-between">
+                        Número de cliente
+                        <a href="#miModal">
+                            <img src="assets/img/icon/help-icon.png" alt="Ícono" class="img-fluid" width="16">
+                        </a>
+                    </label>
+                    <input type="text" class="form-control" id="cliente" placeholder="Números" required>
+                </div>
+                <div class="mb-3">
+                    <label for="celular" class="form-label">Número celular</label>
+                    <input type="tel" class="form-control" id="celular" placeholder="10 dígitos" required>
+                </div>
+                <div class="mb-3 text-muted d-flex align-items-center">
+                    <img src="assets/img/icon/info.png" alt="Ícono" width="16" class="me-2 img-fluid">
+                    <small class="fst-italic">Enviaremos un código a tu número para verificar tu identidad.</small>
+                </div>
+                <button type="submit" class="btn-forms-st01 w-100" disabled>
+                    Regístrate
+                    <span class="material-symbols-outlined icon-right">arrow_forward</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Modal Número de Cliente -->
+        <div id="miModal" class="modal-customer-form">
+            <a href="#" class="modal-overlay"></a>
+            <div class="modal-customer-form-content">
+                <div class="drag-indicator"></div>
+                <div class="modal-header">Número de cliente</div>
+                <div class="modal-body">
+                    <p>Tu número de cliente lo puedes encontrar en:</p>
+                    <ul>
+                        <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
+                        <li>Pregunta a tu Promotor/Asesor.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

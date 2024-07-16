@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>Inicio de sesión</title>
+    <meta name="description"
+         content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
+    <meta name="keywords" content="Compartamos Banco">
+    <meta property="og:image" content="assets/img/logo_CB.png">
+    <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+    <meta property="og:description"
+         content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css?v=7" rel="stylesheet">
+    <link href="assets/css/icons-fonts.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-forms">
+     <main class="d-flex justify-content-center align-items-center vh-100"">
+          <div class="form-container">
+              <div class="text-center mb-3">
+                  <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid left-aligned-img" width="100">
+                  <br><br>
+              </div>
+              <h5 class="text-start">Inicio de sesión</h5>
+              <p class="text-start font-p-forms">Ingresa a tu cuenta con tu teléfono registrado.</p>
+              <form class="verification-form" action="submit_page.html" method="post">
+               <!-- División para los campos de entrada -->
+               <div class="input-group">
+                   <input type="text" class="form-control code-input" id="code1" maxlength="1" required>
+                   <input type="text" class="form-control code-input" id="code2" maxlength="1" required>
+                   <input type="text" class="form-control code-input" id="code3" maxlength="1" required>
+                   <input type="text" class="form-control code-input" id="code4" maxlength="1" required>
+               </div>
+               <!-- División para el botón -->
+               <div class="button-container">
+                   <button type="submit" class="btn-forms-st01 w-100" disabled>
+                       Siguiente
+                       <span class="material-symbols-outlined icon-right">arrow_forward</span>
+                   </button>
+               </div>
+           </form>
+           
+           
+              <p class="text-center mt-4 register-link">¿No tienes una cuenta? <a href="#" class="text-primary-link">Regístrate</a></p>
+          </div>
+      </main>
+      
+</body>
+</html>

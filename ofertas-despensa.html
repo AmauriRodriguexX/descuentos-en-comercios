@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="robots" content="noindex">
+     <meta name="googlebot" content="noindex">
+     <title>Ofertas Despensa</title>
+     <meta name="description"
+          content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
+     <meta name="keywords" content="Compartamos Banco">
+     <meta property="og:image" content="assets/img/logo_CB.png">
+     <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+     <meta property="og:description"
+          content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+     <link href="assets/css/style.css?v=7" rel="stylesheet">
+     <link href="assets/css/icons-fonts.css" rel="stylesheet">
+     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+     <!-- Checkbox oculto para controlar el sidebar y el overlay ya que solo usamos css no js -->
+     <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+     <!-- Navbar principal -->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="nav-container">
+               <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo_CB.png" alt="Logo">
+               </a>
+               <!-- Botón para abrir/cerrar el sidebar -->
+               <button class="menu-button" onclick="toggleSidebar()">
+                    <img src="assets/img/icon/menu-collpasible.png" alt="Menu Icon" class="custom-menu-icon">
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Descuentos cerca de mí</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Favoritos</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Nos interesa tu opinión</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link" href="#">Preguntas frecuentes</a>
+                         </li>
+                         <li class="nav-item transparent-border">
+                              <a class="nav-link icon-list-link " href="tel:8002209000">
+                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
+                                   frecuentes
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+
+     <div class="sidebar">
+          <ul class="navbar-nav sticky-sidebar-close">
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link active" href="#">
+                         <span class="material-symbols-outlined space-link-ico">home</span> Inicio
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">my_location</span> Descuentos cerca de
+                         mí
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">favorite</span> Favoritos
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">insert_chart</span> Nos interesa tu
+                         opinión
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">help</span> Preguntas frecuentes
+                    </a>
+               </li>
+               <li class="nav-item transparent-border">
+                    <a class="nav-link icon-list-link " href="tel:8002209000">
+                         <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
+                         frecuentes
+                    </a>
+               </li>
+               <li class="nav-item close-session-item">
+                    <hr class="hr-second-stape">
+                    <a class="nav-link icon-list-link" href="#">
+                         <span class="material-symbols-outlined space-link-ico">logout</span> Cerrar sesión
+                    </a>
+               </li>
+          </ul>
+     </div>
+
+
+
+     <!-- Overlay, también un div para el checkbox, permitiendo cerrar el sidebar al clickear -->
+     <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+     <!-- Contenido principal de la página -->
+     <main class="custom-container-s4 main-section-top" >
+          <div class="row">
+               <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-first">
+                    <a href="">
+                         <div class="d-flex align-items-center">
+                              <span class="material-symbols-outlined space-link-ico-02">arrow_back</span>
+                              <p class="no-margin">4 tiendas</p>
+                         </div>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip">
+                         <span class="material-symbols-outlined cb-color">location_on</span>
+                         <span class="ms-2">CDMX</span>
+                    </div>
+               </div>
+               <hr>
+               <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-second">
+                    <a href="">
+                         <div class="d-flex align-items-center">
+                              <p class="low-text">4 tiendas</p>
+                         </div>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip low-text">
+                         <span class="ms-2">Ordenar por</span>
+                         <img src="assets/img/icon/filter.png" alt="Compartamos Banco"
+                              class="img-fluid left-aligned-img chip-icon-space" width="16">
+
+                    </div>
+               </div>
+               <hr>
+               <div>
+                    <br>
+               </div>
+               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 filter-seciton-second">
+                    <div class="image-container">
+                         <img src="assets/img/logos/chedraui-logo.png" alt="chedraui-logo" class="img-fluid">
+                         <input type="checkbox" id="favorite-checkbox-1" class="favorite-checkbox">
+                         <label for="favorite-checkbox-1" class="favorite-button">
+                              <span class="material-symbols-outlined favorite-icon">favorite</span>
+                         </label>
+                    </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 filter-seciton-second">
+                    <div class="image-container">
+                         <img src="assets/img/logos/sams-logo.png" alt="chedraui-logo" class="img-fluid">
+                         <input type="checkbox" id="favorite-checkbox-2" class="favorite-checkbox">
+                         <label for="favorite-checkbox-2" class="favorite-button">
+                              <span class="material-symbols-outlined favorite-icon">favorite</span>
+                         </label>
+                    </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 filter-seciton-second">
+                    <div class="image-container">
+                         <img src="assets/img/logos/soriana.png" alt="chedraui-logo" class="img-fluid">
+                         <input type="checkbox" id="favorite-checkbox-3" class="favorite-checkbox">
+                         <label for="favorite-checkbox-3" class="favorite-button">
+                              <span class="material-symbols-outlined favorite-icon">favorite</span>
+                         </label>
+                    </div>
+               </div>
+               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 filter-seciton-second">
+                    <div class="image-container">
+                         <img src="assets/img/logos/walmart.png" alt="chedraui-logo" class="img-fluid">
+                         <input type="checkbox" id="favorite-checkbox-4" class="favorite-checkbox">
+                         <label for="favorite-checkbox-4" class="favorite-button">
+                              <span class="material-symbols-outlined favorite-icon">favorite</span>
+                         </label>
+                    </div>
+               </div>
+
+
+
+
+
+          </div>
+     </main>
+
+     <!-- Footer de la página -->
+     <footer class="footer custom-footer-raised">
+          <div class="container">
+               <div class="row">
+                    <div class="col-12">
+                         <img src="assets/img/logo_CB.png" alt="Logo Compartamos Banco" width="100">
+                    </div>
+                    <div class="col-12">
+                         <img src="assets/img/logos/gentera.png" class="img-fluid img-custom"
+                              alt="Logo Compartamos Banco">
+                    </div>
+                    <div class="col-12">
+                         <div class="footer-terms">
+                              <a href="https://www.compartamos.com.mx/compartamos/regulacion/privacidad"
+                                   target="_blank">Aviso de Privacidad</a>
+                              <p class="vert-line-form"> | </p>
+                              <a href="https://www.compartamos.com.mx/compartamos/regulacion/terminos-y-condiciones"
+                                   target="_blank">Términos y Condiciones</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+</body>
+<!-- aqui va un scrtip el cual ayuda a cambiar el icono de menu por el close (x) para cerrar el sidebar, se elimina script -->
+<script>
+     function toggleSidebar() {
+          var checkbox = document.getElementById('nav-toggle');
+          var menuButton = document.querySelector('.menu-button img');
+
+          if (checkbox.checked) {
+               menuButton.src = 'assets/img/icon/menu-collpasible.png';
+          } else {
+               menuButton.src = 'assets/img/icon/close-sidebar.png';
+          }
+
+          checkbox.checked = !checkbox.checked;
+     }
+
+</script>
+
+</html>
