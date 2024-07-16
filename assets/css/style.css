@@ -2385,7 +2385,8 @@ a.next:hover {
     position: fixed;
     top: 20px;
     right: 24px;
-    width: 40px;
+    width: 48px;
+    background-color: transparent;
     border: 1px solid transparent;
     z-index: 1003;
     display: none;
