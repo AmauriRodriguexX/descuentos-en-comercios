@@ -381,7 +381,6 @@ main h2 {
     font-size: 40px;
     line-height: 56px;
     font-weight: 400;
-    margin-bottom: 40px !important;
 }
 
 /* Estilos específicos para dispositivos móviles */
@@ -709,6 +708,42 @@ p {
 }
 
 
+/* Estilo base para .btn-primary */
+.btn-primary-small {
+    background: #CE0058;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    width: auto;
+    /* Ancho fijo para resoluciones mayores */
+    height: 50px;
+    border: none;
+    transition: background 0.3s ease;
+    margin-right: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.btn-primary-small:hover,
+.btn-primary-small:active {
+    background: #910048;
+    color: white;
+}
+
+/* Media query para dispositivos con ancho máximo de 768px */
+@media (max-width: 768px) {
+    .btn-primary-small  {
+        width: 100%;
+        /* Ancho total en dispositivos pequeños */
+        padding: 12px 20px;
+        /* Ajuste opcional del padding para dispositivos pequeños */
+        margin-bottom: 15px;
+    }
+}
+
 /* Estilo base para .btn-secondary */
 .btn-secondary {
     background: transparent;
@@ -812,6 +847,11 @@ p {
 .btn.downloadIcon {
     width: 330px;
     /* Ancho fijo, no especificado en la media query */
+}
+
+.button-ico-act {
+    border: 1px solid transparent;
+    background-color: transparent;
 }
 
 footer {
@@ -2281,7 +2321,6 @@ a.next:hover {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    text-align: left;
     text-decoration: underline;
     color: #CE0058;
 
@@ -2291,7 +2330,7 @@ a.next:hover {
     display: flex;
     justify-content: space-around;
     /* Espacia los campos de entrada uniformemente */
-    padding: 10px;
+    padding: 24px;
     /* Añade un poco de padding dentro del grupo de entrada */
     background: #FFFFFF;
     /* Fondo blanco para el grupo de entrada */
@@ -2310,7 +2349,7 @@ a.next:hover {
     /* Centrar texto dentro de las cajas */
     border: 2px solid #DADADA;
     /* Borde sólido y ligero */
-    border-radius: 5px;
+    border-radius: 5px !important;
     /* Esquinas ligeramente redondeadas */
     background-color: #FFFFFF;
     /* Fondo blanco para los campos de entrada */
@@ -2318,6 +2357,15 @@ a.next:hover {
     /* Margen para separar los inputs */
     outline: none;
     /* Elimina el contorno al enfocar */
+}
+
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-left: 22px;
+    margin-right: 22px;
 }
 
 
@@ -2706,10 +2754,448 @@ a.next:hover {
     padding-bottom: 32px;
 }
 
+.filter-seciton-third {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+    .filter-seciton-third {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+
 .low-text {
     color: #5E6A71;
 }
 
 .chip-icon-space {
     margin-left: 8px;
+}
+
+
+.custom-image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.custom-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.custom-favorite-checkbox {
+    display: none;
+}
+.custom-favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 74px; /* Ajusta esta posición según sea necesario */
+    right: 3px; /* Ajusta esta posición según sea necesario */
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra tenue */
+    padding: 4px;
+}
+.custom-material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings:
+        'FILL' 0, /* Outline por defecto */
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: #CE0058; /* Color del corazón */
+}
+.custom-favorite-checkbox:checked + .custom-favorite-button .custom-material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1, /* Relleno cuando está chequeado */
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+
+.store-badge-color {
+    background-color: #E0F3F6;
+    color: #004977;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.boni-badge-color {
+    background-color: #F0EBF7;
+    color: #6528B1;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.icono-badge {
+    margin-right: 5px;
+    font-size: 16px !important;
+    width: 16px;
+
+}
+
+
+.p-text-store-big {
+    font-size: 20px;
+    color: #000000;
+}
+
+.p-text-store-small {
+    font-size: 16px;
+    color: #5E6A71;
+}
+.pa-icon-left {
+    margin-left: 2.5rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .pa-icon-left {
+        margin-left: 0;
+    }
+}
+
+.card-discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.discount-info {
+    display: flex;
+    align-items: center;
+}
+
+.discount-info i {
+    margin-right: 10px;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.discount-info h5 {
+    margin: 0;
+}
+
+.discount-info p {
+    margin: 0;
+}
+
+/* CSS para ajustar los cards en pantallas pequeñas */
+@media (max-width: 768px) {
+    .card-discount {
+        padding: 24px;
+        border: 1px solid #ddd; /* Mantén el borde completo */
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .container.mt-3 {
+        margin-top: 1rem !important; /* Ajusta el margin-top a 0.5rem */
+    }
+
+   
+
+    .container::before,
+    .container::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #ddd;
+        margin: 0;
+    }
+}
+
+
+
+/* Default styles */
+.justify-content-center-responsive {
+    display: flex;
+    justify-content: center !important;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .justify-content-center-responsive {
+        justify-content: flex-start !important;
+    }
+}
+
+
+
+
+/* Estilos CSS */
+.map-container {
+    position: relative;
+   
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.marker1 {
+    top: 50%; 
+    left: 50%;
+}
+
+.marker2 {
+    top: 30%; 
+    left: 40%; 
+}
+
+.marker3 {
+    top: 15%; 
+    left: 40%; 
+}
+
+.marker4 {
+    top: 79%; 
+    left: 50%; 
+}
+
+
+.marker5 {
+    top: 69%; 
+    left: 80%; 
+}
+
+.alert-succes-cb {
+    background-color: #E9F7D7 !important;
+    border: 1px solid transparent !important;
+
+}
+
+.bbtn {
+    cursor: pointer;
+    padding: 4px 18px;
+    border-radius: 59px;
+    margin-right: 5px;
+    background-color: #fde5ef;
+    color: #CE0058;
+    border: none;
+    display: inline-block;
+    white-space: nowrap; /* Prevent wrapping of text */
+    margin-bottom: 32px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    border: 2px solid #CE0058;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile */
+}
+
+.d-flex::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar on WebKit browsers */
+}
+
+@media (min-width: 577px) {
+    .d-flex {
+        overflow-x: visible;
+    }
+}
+
+.collapsible-content {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-weight: bold; /* Para el título en negritas */
+}
+
+.collapsible-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.5s ease-out;
+    padding: 0 15px;
+    opacity: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label + .collapsible-body {
+    max-height: 100vh;
+    padding: 10px 15px;
+    opacity: 1;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    transition: font-variation-settings 0.1s, transform 0.3s;
+}
+
+input[type="checkbox"]:checked + label .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    transform: rotate(180deg);
+}
+
+
+
+.form-check-input {
+    margin-top: 0em !important;
+   
+}
+
+.form-check-input:checked {
+    background-color: #CE0058;
+    border-color: #CE0058;
+}
+
+.question { 
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.question-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.radio-card {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 10px;
+    cursor: pointer;
+    margin: 8px 8px 8px 0;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+@media (max-width: 768px) { /* Ajusta este valor según tus necesidades */
+    .radio-group {
+        flex-direction: column; /* Cambia la dirección a columna */
+    }
+}
+
+
+.radio-card:last-child {
+    margin-right: 0;
+}
+
+.radio-visible .form-check-input {
+    display: inline-block;
+    margin-right: 16px !important; /* Espacio entre el radio button y el texto */
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-visible input[type="radio"]:checked + label {
+    border-color: transparent; /* Aseguramos que no haya borde en esta vista */
+}
+
+.submit-btn {
+    background-color: #d30068;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p-sub-qu {
+    color: #5E6A71;
+    font-size: 14px;
+    margin: 0;
+}
+
+.p-text-quest {
+    color: #252A2D;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+/* Definición general para .w-50 */
+.w-50 {
+    width: 50%;
+}
+
+/* Media query para móviles */
+@media (max-width: 767px) {
+    .w-50 {
+        width: 100% !important;
+    }
+}
+
+
+.link-space-form {
+    margin-bottom: 64px;
+}
+
+
+.p-form-register-main {
+    font-size: 16px;
+}
+
+
+.icon-position-timer {
+    margin-left: 4px;
+    position: fixed;
 }

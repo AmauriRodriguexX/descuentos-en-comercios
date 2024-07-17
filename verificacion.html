@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
-    <title>Inicio de sesión</title>
+    <title>Verificación</title>
     <meta name="description"
          content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
     <meta name="keywords" content="Compartamos Banco">
@@ -21,35 +21,36 @@
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body class="bg-forms">
-     <main class="d-flex justify-content-center align-items-center vh-100"">
+     <main class="d-flex justify-content-center align-items-center vh-100">
           <div class="form-container">
-              <div class="text-center mb-3">
-                  <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid left-aligned-img" width="100">
-                  <br><br>
+              <div class="text-center mb-4">
+                  <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid" width="100">
               </div>
-              <h5 class="text-start">Inicio de sesión</h5>
-              <p class="text-start font-p-forms">Ingresa a tu cuenta con tu teléfono registrado.</p>
+              <h5 class="text-start mb-4">Verificación</h5>
+              <p class="text-start">Ingresa el código que te enviamos por SMS a tu teléfono.</p>
+              <div>
+                <p class="text-center no-margin"><b>02:00<span class="material-symbols-outlined icon-position-timer outlined-force ">
+                    timer
+                    </span></b></p>
+              </div>
               <form class="verification-form" action="submit_page.html" method="post">
-               <!-- División para los campos de entrada -->
                <div class="input-group">
                    <input type="text" class="form-control code-input" id="code1" maxlength="1" required>
                    <input type="text" class="form-control code-input" id="code2" maxlength="1" required>
                    <input type="text" class="form-control code-input" id="code3" maxlength="1" required>
                    <input type="text" class="form-control code-input" id="code4" maxlength="1" required>
                </div>
-               <!-- División para el botón -->
+               <div class="link-space-form text-center">
+                <a href="#" class="text-primary-link">Cambie de número</a>
+               </div>
                <div class="button-container">
                    <button type="submit" class="btn-forms-st01 w-100" disabled>
-                       Siguiente
-                       <span class="material-symbols-outlined icon-right">arrow_forward</span>
+                       Regístrate
+                       <span class="material-symbols-outlined icon-right ">arrow_forward</span>
                    </button>
                </div>
            </form>
-           
-           
-              <p class="text-center mt-4 register-link">¿No tienes una cuenta? <a href="#" class="text-primary-link">Regístrate</a></p>
           </div>
       </main>
-      
 </body>
 </html>

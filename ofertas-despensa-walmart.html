@@ -21,7 +21,6 @@
      <link href="assets/css/icons-fonts.css" rel="stylesheet">
      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
      <!-- Checkbox oculto para controlar el sidebar y el overlay ya que solo usamos css no js -->
      <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -114,77 +113,112 @@
      <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
      <!-- Contenido principal de la página -->
-     <main class="custom-container-s4 main-section-top" >
+     <main class="custom-container-s4 main-section-top">
           <div class="row">
-               <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-first">
-                    <a href="">
-                         <div class="d-flex align-items-center">
-                              <span class="material-symbols-outlined space-link-ico-02">arrow_back</span>
-                              <p class="no-margin">4 tiendas</p>
-                         </div>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip">
-                         <span class="material-symbols-outlined cb-color">location_on</span>
-                         <span class="ms-2">CDMX</span>
-                    </div>
-               </div>
-               <hr>
-               <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-second">
-                    <a href="">
-                         <div class="d-flex align-items-center">
-                              <p class="low-text">4 tiendas</p>
-                         </div>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip low-text">
-                         <span class="ms-2">Ordenar por</span>
-                         <img src="assets/img/icon/filter.png" alt="Compartamos Banco"
-                              class="img-fluid left-aligned-img chip-icon-space" width="16">
-
-                    </div>
-               </div>
-               <hr>
-               <div>
-                    <br>
-                    <br>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3">
-                    <div class="image-container">
-                         <img src="assets/img/logos/chedraui-logo.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-1" class="favorite-checkbox">
-                         <label for="favorite-checkbox-1" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/sams-logo.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-2" class="favorite-checkbox">
-                         <label for="favorite-checkbox-2" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/soriana.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-3" class="favorite-checkbox">
-                         <label for="favorite-checkbox-3" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/walmart.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-4" class="favorite-checkbox">
-                         <label for="favorite-checkbox-4" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
+              <div class="col-12 d-flex">
+                  <a href="">
+                      <div class="d-flex align-items-center pa-icon-left">
+                          <span class="material-symbols-outlined space-link-ico-02">arrow_back</span>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-12 mb-3">
+                  <div class="d-flex align-items-center justify-content-center-responsive">
+                      <div class="custom-image-container">
+                          <img src="assets/img/descuentos/wlamart-radius.png" alt="chedraui-logo" class="img-fluid">
+                          <input type="checkbox" id="custom-favorite-checkbox-1" class="custom-favorite-checkbox">
+                          <label for="custom-favorite-checkbox-1" class="custom-favorite-button">
+                              <span class="custom-material-symbols-outlined md-16">favorite</span>
+                          </label>
+                      </div>
+                      <div class="text-section">
+                          <p class="no-margin left-align tittle-card-01"><b>Walmart</b></p>
+                          <p class="no-margin left-align sub-card-02">4 ofertas</p>
+                      </div>
+                  </div>
+                  <hr>
+              </div>
+              <div class="col-12">
+                  <div class="container mt-3">
+                      <div class="card-discount">
+                          <div class="discount-info">
+                              <div>
+                                  <span class="badge store-badge-color">
+                                      <img src="assets/img/icon/store-icon.png" alt="Ícono" class="icono-badge">En tienda
+                                  </span>
+                                  <p class="p-text-store-big"><b>15% de descuento</b></p>
+                                  <p class="p-text-store-small">En compras mayores a $500 MXN.</p>
+                              </div>
+                          </div>
+                          <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
+                          <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                          <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
+                          <button class="d-md-none button-ico-act">
+                              <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="container mt-3">
+                      <div class="card-discount">
+                          <div class="discount-info">
+                              <div>
+                                  <span class="badge boni-badge-color">
+                                      <img src="assets/img/icon/internet-icon.png" alt="Ícono" class="icono-badge">En tienda
+                                  </span>
+                                  <p class="p-text-store-big"><b>$500 de bonificación</b></p>
+                                  <p class="p-text-store-small">Compra $5,999 o más.</p>
+                              </div>
+                          </div>
+                          <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
+                          <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                          <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
+                          <button class="d-md-none button-ico-act">
+                              <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="container mt-3">
+                      <div class="card-discount">
+                          <div class="discount-info">
+                              <div>
+                                  <span class="badge store-badge-color">
+                                      <img src="assets/img/icon/store-icon.png" alt="Ícono" class="icono-badge">En tienda
+                                  </span>
+                                  <p class="p-text-store-big"><b>$200 de bonificación</b></p>
+                                  <p class="p-text-store-small">Compra $1,499 o más en belleza.</p>
+                              </div>
+                          </div>
+                          <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
+                          <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                          <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
+                          <button class="d-md-none button-ico-act">
+                              <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="container mt-3">
+                      <div class="card-discount">
+                          <div class="discount-info">
+                              <div>
+                                  <span class="badge boni-badge-color">
+                                      <img src="assets/img/icon/internet-icon.png" alt="Ícono" class="icono-badge">En tienda
+                                  </span>
+                                  <p class="p-text-store-big"><b>$150 de bonificación</b></p>
+                                  <p class="p-text-store-small">Compra $1,200 o más en ropa, zapatos y accesorios de moda.</p>
+                              </div>
+                          </div>
+                          <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
+                          <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                          <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
+                          <button class="d-md-none button-ico-act">
+                              <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
           </div>
-     </main>
+      </main>
+      
 
      <!-- Footer de la página -->
      <footer class="footer custom-footer-raised">

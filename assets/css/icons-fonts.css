@@ -58,10 +58,31 @@
   color: #CE0058; /* Color del corazón */
 }
 
+/* Estilo para la clase active */
+.favorite-button.active .favorite-icon,
 .favorite-checkbox:checked + .favorite-button .favorite-icon {
   font-variation-settings:
-    'FILL' 1,  /* Relleno cuando está chequeado */
+    'FILL' 1,  /* Relleno cuando está activo */
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
 }
+
+
+
+.md-16 {
+  font-size: 16px;
+}
+
+
+.outlined-force {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+
+

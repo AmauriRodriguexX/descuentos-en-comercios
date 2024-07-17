@@ -6,7 +6,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="robots" content="noindex">
      <meta name="googlebot" content="noindex">
-     <title>Ofertas Despensa</title>
+     <title>Preguntas frecuentes</title>
      <meta name="description"
           content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
      <meta name="keywords" content="Compartamos Banco">
@@ -21,7 +21,6 @@
      <link href="assets/css/icons-fonts.css" rel="stylesheet">
      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
      <!-- Checkbox oculto para controlar el sidebar y el overlay ya que solo usamos css no js -->
      <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -39,7 +38,7 @@
                <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                          <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                              <a class="nav-link" aria-current="page" href="#">Inicio</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="#">Descuentos cerca de mí</a>
@@ -51,7 +50,7 @@
                               <a class="nav-link" href="#">Nos interesa tu opinión</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Preguntas frecuentes</a>
+                              <a class="nav-link active" href="#">Preguntas frecuentes</a>
                          </li>
                          <li class="nav-item transparent-border">
                               <a class="nav-link icon-list-link " href="tel:8002209000">
@@ -67,7 +66,7 @@
      <div class="sidebar">
           <ul class="navbar-nav sticky-sidebar-close">
                <li class="nav-item transparent-border">
-                    <a class="nav-link icon-list-link active" href="#">
+                    <a class="nav-link icon-list-link" href="#">
                          <span class="material-symbols-outlined space-link-ico">home</span> Inicio
                     </a>
                </li>
@@ -89,7 +88,7 @@
                     </a>
                </li>
                <li class="nav-item transparent-border">
-                    <a class="nav-link icon-list-link" href="#">
+                    <a class="nav-link icon-list-link active" href="#">
                          <span class="material-symbols-outlined space-link-ico">help</span> Preguntas frecuentes
                     </a>
                </li>
@@ -114,75 +113,73 @@
      <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
      <!-- Contenido principal de la página -->
-     <main class="custom-container-s4 main-section-top" >
+     <main class="custom-container-s4 main-section-top">
           <div class="row">
                <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-first">
-                    <a href="">
-                         <div class="d-flex align-items-center">
-                              <span class="material-symbols-outlined space-link-ico-02">arrow_back</span>
-                              <p class="no-margin">4 tiendas</p>
-                         </div>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip">
-                         <span class="material-symbols-outlined cb-color">location_on</span>
-                         <span class="ms-2">CDMX</span>
-                    </div>
+                    <h2>Preguntas frecuentes</h2>
                </div>
-               <hr>
-               <div class="col-12 d-flex align-items-center justify-content-between filter-seciton-second">
-                    <a href="">
-                         <div class="d-flex align-items-center">
-                              <p class="low-text">4 tiendas</p>
-                         </div>
-                    </a>
-                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip low-text">
-                         <span class="ms-2">Ordenar por</span>
-                         <img src="assets/img/icon/filter.png" alt="Compartamos Banco"
-                              class="img-fluid left-aligned-img chip-icon-space" width="16">
+               <div class="d-flex mb-3">
+                    <input type="radio" name="bbtn" id="badge1" class="bbtn">
+                    <label class="bbtn" for="badge1">Contraseña</label>
+                    <input type="radio" name="bbtn" id="badge2" class="bbtn">
+                    <label class="bbtn" for="badge2">Descuentos</label>
+                    <input type="radio" name="bbtn" id="badge3" class="bbtn">
+                    <label class="bbtn" for="badge3">Marcas</label>
+                    <input type="radio" name="bbtn" id="badge4" class="bbtn">
+                    <label class="bbtn" for="badge4">Recargas</label>
+                    <input type="radio" name="bbtn" id="badge5" class="bbtn">
+                    <label class="bbtn" for="badge5">Aplicación</label>
+               </div>
+               <div class="collapsible-content">
+                    <input type="checkbox" id="collapsible1">
+                    <label for="collapsible1" class="collapsible-header">
+                        <p>¿Cómo me registro en la aplicación?</p>
+                        <span class="material-symbols-outlined cb-color">
+                            add_circle
+                        </span>
+                    </label>
+                    <div class="collapsible-body">
+                         Para registrarte, necesitarás proporcionar tu número de cliente y tu teléfono de celular, al cual enviaremos un código de verficiación.
+                    </div>
+                </div>
+        
+                <div class="collapsible-content">
+                    <input type="checkbox" id="collapsible2">
+                    <label for="collapsible2" class="collapsible-header">
+                        <p>¿Qué es un código de verificación?</p>
+                        <span class="material-symbols-outlined cb-color">
+                            add_circle
+                        </span>
+                    </label>
+                    <div class="collapsible-body">
+                         Es una serie de números que enviamos a tu teléfono por SMS para garantizar que puedas acceder a tu cuenta creada.
+                    </div>
+                </div>
+                <div class="collapsible-content">
+                    <input type="checkbox" id="collapsible3">
+                    <label for="collapsible3" class="collapsible-header">
+                        <p>¿Puedo modificar mi información de registro después de crear una cuenta?</p>
+                        <span class="material-symbols-outlined cb-color">
+                            add_circle
+                        </span>
+                    </label>
+                    <div class="collapsible-body">
+                         Sí, puedes modificar tu información de registro en cualquier momento accediendo a tu perfil en la aplicación o en el sitio web.
+                    </div>
+                </div>
+                <div class="collapsible-content">
+                    <input type="checkbox" id="collapsible4">
+                    <label for="collapsible4" class="collapsible-header">
+                        <p>¿Cómo recupero mi contraseña si la he olvidado?</p>
+                        <span class="material-symbols-outlined cb-color">
+                            add_circle
+                        </span>
+                    </label>
+                    <div class="collapsible-body">
+                         Si has olvidado tu contraseña, puedes recuperarla haciendo clic en el enlace "Olvidé mi contraseña" en la página de inicio de sesión.
+                    </div>
+                </div>
 
-                    </div>
-               </div>
-               <hr>
-               <div>
-                    <br>
-                    <br>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3">
-                    <div class="image-container">
-                         <img src="assets/img/logos/chedraui-logo.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-1" class="favorite-checkbox">
-                         <label for="favorite-checkbox-1" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/sams-logo.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-2" class="favorite-checkbox">
-                         <label for="favorite-checkbox-2" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/soriana.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-3" class="favorite-checkbox">
-                         <label for="favorite-checkbox-3" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
-               <div class="col-lg-3 col-md-6 col-6 text-center mb-3 ">
-                    <div class="image-container">
-                         <img src="assets/img/logos/walmart.png" alt="chedraui-logo" class="img-fluid">
-                         <input type="checkbox" id="favorite-checkbox-4" class="favorite-checkbox">
-                         <label for="favorite-checkbox-4" class="favorite-button">
-                              <span class="material-symbols-outlined favorite-icon md-16">favorite</span>
-                         </label>
-                    </div>
-               </div>
           </div>
      </main>
 
