@@ -3496,7 +3496,7 @@ input[type="radio"] {
     padding: 40px;
     border: 1px solid #888;
     font-size: 20px;
-    max-width: max-content;
+    max-width: 700px;
     transform: translateY(-50px);
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
@@ -3619,22 +3619,17 @@ input[type="radio"] {
 
 .modal-body.modal-body-1 {
     display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
-    justify-content: center; /* Centra contenido verticalmente */
-    align-items: center; /* Centra contenido horizontalmente */
+    overflow-y: auto;
+    max-height: 518px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .modal-body.modal-body-1 {
     text-align: center; /* Centra el texto y elementos en línea dentro del div */
     
-}
-
-.modal-body .membership-card, 
-.modal-body .membership-code, 
-.modal-body .download-button, 
-.modal-body .terms-conditions {
-    margin: 0 auto; /* Aplica margen automático horizontalmente para bloques */
 }
 
 
@@ -3654,3 +3649,10 @@ input[type="radio"] {
         margin-bottom: 16px;
     }
 }
+
+
+.top-content-header-img {
+    margin-top: 125px;
+}
+
+
