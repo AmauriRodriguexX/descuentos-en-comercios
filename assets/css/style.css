@@ -3579,7 +3579,7 @@ input[type="radio"] {
     margin-bottom: 0px;
     display: grid;
     justify-content: center;
-    align-items: center;
+    
 }
 
 
@@ -3624,7 +3624,6 @@ input[type="radio"] {
     overflow-y: auto;
     max-height: 518px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -3652,15 +3651,9 @@ input[type="radio"] {
     }
 }
 
-
 /* Estilo base para escritorio */
 .top-content-header-img {
-    margin-top: 160px; /* Margen para escritorio */
+    margin-top: -27px; /* Margen para escritorio */
 }
 
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
-    .top-content-header-img {
-        margin-top: 280px; /* Margen ajustado para móviles */
-    }
-}
+
