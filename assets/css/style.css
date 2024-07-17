@@ -358,7 +358,7 @@ h3 {
 
 main h1 {
     color: #CE0058;
-    font-family: 'Bree';
+    font-family: 'BreeBold';
     font-size: 64px;
     line-height: 56px;
     font-weight: 400;
@@ -3055,7 +3055,7 @@ input[type="radio"]:checked + label {
     cursor: pointer;
     padding: 10px 15px;
     background-color: #fff;
-    font-weight: bold; /* Para el título en negritas */
+    font-weight: 600;
 }
 
 .collapsible-body {
@@ -3243,3 +3243,8 @@ input[type="radio"] {
 .grey-small-01 {
     color: #798388;
 }
+
+.br-8px {
+    border-radius: 8px;
+}
+
