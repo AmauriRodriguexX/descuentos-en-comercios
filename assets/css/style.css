@@ -3084,8 +3084,9 @@ input[type="checkbox"]:checked + label + .collapsible-body {
 
 input[type="checkbox"]:checked + label .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    transform: rotate(180deg);
 }
+
+
 
 
 
