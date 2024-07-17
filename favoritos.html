@@ -122,12 +122,15 @@
                               <p class="low-text">4 tiendas</p>
                          </div>
                     </a>
-                    <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip low-text">
-                         <span class="ms-2">Ordenar por</span>
-                         <img src="assets/img/icon/filter.png" alt="Compartamos Banco"
-                              class="img-fluid left-aligned-img chip-icon-space" width="16">
+                    <a href="#miModal">
+                         <div class="d-flex align-items-center justify-content-center px-3 py-2 location-chip low-text">
+                              <span class="ms-2">Ordenar por</span>
+                              <img src="assets/img/icon/filter.png" alt="Compartamos Banco"
+                                   class="img-fluid left-aligned-img chip-icon-space" width="16">
 
-                    </div>
+                         </div>
+                    </a>
+                    
                </div>
                <hr>
                <div>
@@ -176,6 +179,39 @@
                <img src="assets/img/icon/Actions-check_circle_outline.png" alt="Checkmark" style="width: 24px; height: 24px; margin-right: 10px;">
                Tienda eliminada de Favoritos
              </div>
+
+             <!-- Modal Número de Cliente -->
+          <div id="miModal" class="modal-customer-form">
+               <a href="#" class="modal-overlay"></a>
+               <div class="modal-customer-form-content">
+                    <div class="drag-indicator"></div>
+                    <div class="modal-header responsive-text-align-center-to-left">Ordenar por</div>
+                    <div class="modal-body">
+                         <div class="modal-chekecd-forms d-flex justify-content-between">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                   Nombre (A - Z)
+                              </label>
+                              <input class="form-check-input radio-btn-category" type="radio" name="flexRadioDefault"
+                                   id="flexRadioDefault1" checked>
+                         </div>
+                         <div class="modal-chekecd-forms-second d-flex justify-content-between">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                   Nombre (Z - A)
+                              </label>
+                              <input class="form-check-input radio-btn-category" type="radio" name="flexRadioDefault"
+                                   id="flexRadioDefault2">
+                         </div>
+                         <div class="modal-chekecd-forms-second d-flex justify-content-between">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                   Categoria
+                              </label>
+                              <input class="form-check-input radio-btn-category" type="radio" name="flexRadioDefault"
+                                   id="flexRadioDefault3">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
      </main>
 
      <!-- Footer de la página -->

@@ -3248,3 +3248,64 @@ input[type="radio"] {
     border-radius: 8px;
 }
 
+.custom-select-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    height: 42px;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-select-location select {
+    border: none;
+    height: 38px;
+    cursor: pointer;
+    background: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+.custom-select-location select:focus {
+    outline: none;
+}
+.custom-select-location::after {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+
+.modal-chekecd-forms {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+}
+
+.modal-chekecd-forms-second {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.radio-btn-category {
+    display: block !important;
+}
+
+
+/* Estilo por defecto del label */
+.modal-chekecd-forms .form-check-label {
+    color: initial; /* o el color por defecto que desees */
+}
+
+/* Estilo del label cuando el input está marcado */
+.modal-chekecd-forms .checked-label {
+    color: #CE0058;
+    font-weight: 600;
+}
