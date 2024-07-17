@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
     <title>Obtén descuentos exclusivos por ser cliente de Compartamos</title>
-    <meta name="description" content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
-    <meta name="keywords" content="Compartamos Banco, descuentos, beneficios, ofertas, salud, educación, despensa, negocio">
+    <meta name="description"
+        content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+    <meta name="keywords"
+        content="Compartamos Banco, descuentos, beneficios, ofertas, salud, educación, despensa, negocio">
     <meta property="og:title" content="Obtén descuentos exclusivos por ser cliente de Compartamos">
-    <meta property="og:description" content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+    <meta property="og:description"
+        content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
     <meta property="og:image" content="https://www.compartamos.com.mx/assets/img/logo_CB.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.compartamos.com.mx/descuentos-en-comercios">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-     <link href="assets/css/style.css?v=7" rel="stylesheet">
-     <link href="assets/css/icons-fonts.css" rel="stylesheet">
-     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link href="assets/css/style.css?v=7" rel="stylesheet">
+    <link href="assets/css/icons-fonts.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body class="bg-forms">
     <main class="d-flex justify-content-center align-items-center vh-100">
         <div class="form-container">
             <div class="text-center mb-3">
-                <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid left-aligned-img" width="100">
+                <img src="assets/img/logo_CB.png" alt="Compartamos Banco" class="img-fluid left-aligned-img"
+                    width="100">
                 <br>
                 <br>
             </div>
@@ -33,20 +39,35 @@
                     <label for="celular" class="form-label">Número celular</label>
                     <input type="tel" class="form-control" id="celular" placeholder="10 dígitos" required>
                 </div>
-                <div class="link-space-form">
+                <div class="space-form-login">
                     <a href="#" class="text-primary-link">Cambie de número</a>
                 </div>
-                <div class="button-container">
-                    <button type="submit" class="btn-forms-st01 w-100" disabled>
-                        Entrar
-                        <span class="material-symbols-outlined icon-right">arrow_forward</span>
-                    </button>
-                </div>
+                <button type="submit" class="btn-forms-st01 w-100" disabled>
+                    Siguiente
+                    <span class="material-symbols-outlined icon-hide-small icon-right">arrow_forward</span>
+                </button>
             </form>
             <div class="text-center footer-registre mt-3">
-                <p class="p-form-register-main ">¿No tienes una cuenta? <a href="#" class="text-primary-link">Regístrate</a></p>
+                <p class="p-form-register-main ">¿No tienes una cuenta? <a href="#"
+                        class="text-primary-link">Regístrate</a></p>
+            </div>
+        </div>
+
+        <!-- Modal Número de Cliente -->
+        <div id="miModal" class="modal-customer-form">
+            <div class="modal-customer-form-content">
+                <div class="drag-indicator"></div>
+                <div class="modal-header">Número de cliente</div>
+                <div class="modal-body">
+                    <p>Tu número de cliente lo puedes encontrar en:</p>
+                    <ul>
+                        <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
+                        <li>Pregunta a tu Promotor/Asesor.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
 </body>
+
 </html>
