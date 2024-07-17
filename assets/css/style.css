@@ -2010,10 +2010,16 @@ a.next:hover {
 }
 
 .bg-cb {
-    background: #FCF4F7;
+    background: #FCF4F7; /* Color de fondo rosa claro */
     position: relative;
     z-index: 5;
+}
 
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .bg-cb {
+        background: #FFFFFF; /* Cambia el color de fondo a blanco */
+    }
 }
 
 .bg-cb-img {
@@ -2024,8 +2030,8 @@ a.next:hover {
 
 
 .sub-text {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 30px;
 
 }
 
@@ -3197,7 +3203,7 @@ input[type="radio"] {
 
 .icon-position-timer {
     margin-left: 4px;
-    position: fixed;
+    position: absolute;
 }
 
 .footer-registre {
@@ -3209,4 +3215,22 @@ input[type="radio"] {
     text-align: center !important;
 }
 
+/* Media query para resoluciones mayores a 1440px */
+@media (min-width: 1441px) {
+    .footer-registre {
+        position: static; /* Reestablece la posición a la predeterminada */
+        bottom: auto; /* Elimina el ajuste específico de 'bottom' */
+       }
+}
 
+.space-selector {
+    margin-top: 0px; /* Aplica un margen superior de 32px para todos los dispositivos */
+    margin-bottom: 32px !important; /* Margen inferior predeterminado para escritorio */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .space-selector {
+        margin-bottom: 0px; /* Cambia el margen inferior a 32px en dispositivos móviles */
+    }
+}
