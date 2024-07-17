@@ -3199,3 +3199,14 @@ input[type="radio"] {
     margin-left: 4px;
     position: fixed;
 }
+
+.footer-registre {
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+}
+
+
