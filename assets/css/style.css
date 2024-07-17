@@ -287,9 +287,9 @@ a {
 }
 
 @font-face {
-    font-family: 'BreeRegular';
+    font-family: 'Bree';
     src: url('../fonts/Bree/BreeRegular.otf');
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
@@ -358,7 +358,7 @@ h3 {
 
 main h1 {
     color: #CE0058;
-    font-family: 'BreeBold';
+    font-family: 'Bree';
     font-size: 64px;
     line-height: 56px;
     font-weight: 400;
@@ -377,7 +377,7 @@ main h1 {
 /* Estilos base para h2 dentro de main */
 main h2 {
     color: #CE0058;
-    font-family: 'BreeBold';
+    font-family: 'Bree';
     font-size: 40px;
     line-height: 56px;
     font-weight: 400;
@@ -396,7 +396,7 @@ main h2 {
 
 main h3 {
     color: #CE0058;
-    font-family: 'Bree-SemiBold';
+    font-family: 'Bree';
     font-size: 48px;
     /* Tamaño de fuente para h3 */
     line-height: 48px;
@@ -421,7 +421,7 @@ main h4 {
     font-size: 28px;
     /* Tamaño de fuente para h4 */
     color: #CE0058;
-    font-family: 'BreeBold';
+    font-family: 'Bree';
     line-height: 34px;
     font-weight: 400;
 }
@@ -449,7 +449,7 @@ main h5 {
     font-size: 24px;
     /* Tamaño de fuente para h5 */
     color: #CE0058;
-    font-family: 'BreeBold';
+    font-family: 'Bree';
     font-size: 24px;
     /* Tamaño de fuente para h3 */
     line-height: 32px;
@@ -460,7 +460,7 @@ main h6 {
     font-size: 20px;
     /* Tamaño de fuente para h6 */
     color: #CE0058;
-    font-family: 'BreeBold';
+    font-family: 'Bree';
     font-size: 18px;
     /* Tamaño de fuente para h3 */
     line-height: 24px;
@@ -2670,7 +2670,7 @@ a.next:hover {
     position: absolute;
     bottom: 24px;
     left: 24px;
-    background-color: #d2237a;
+    background-color: #ce0058;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -2932,7 +2932,6 @@ a.next:hover {
     .container::after {
         content: "";
         display: block;
-        height: 1px;
         background-color: #ddd;
         margin: 0;
     }
@@ -3174,7 +3173,7 @@ input[type="radio"] {
 .p-text-quest {
     color: #252A2D;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 
@@ -3234,4 +3233,13 @@ input[type="radio"] {
     .space-selector {
         margin-bottom: 0px; /* Cambia el margen inferior a 32px en dispositivos móviles */
     }
+}
+
+
+.grey-small {
+ color: #5E6A71;
+}
+
+.grey-small-01 {
+    color: #798388;
 }

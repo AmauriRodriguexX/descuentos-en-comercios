@@ -3,7 +3,7 @@
 
 <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="robots" content="noindex">
      <meta name="googlebot" content="noindex">
      <title>Descuentos cerca de mi</title>
@@ -21,6 +21,7 @@
      <link href="assets/css/icons-fonts.css" rel="stylesheet">
      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
      <!-- Checkbox oculto para controlar el sidebar y el overlay ya que solo usamos css no js -->
      <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -54,8 +55,8 @@
                          </li>
                          <li class="nav-item transparent-border">
                               <a class="nav-link icon-list-link " href="tel:8002209000">
-                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
-                                   frecuentes
+                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span>
+                                   8002209000
                               </a>
                          </li>
                     </ul>
@@ -94,8 +95,7 @@
                </li>
                <li class="nav-item transparent-border">
                     <a class="nav-link icon-list-link " href="tel:8002209000">
-                         <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> Preguntas
-                         frecuentes
+                         <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> 800-220-9000
                     </a>
                </li>
                <li class="nav-item close-session-item">
@@ -127,9 +127,9 @@
                <img src="assets/img/maps/Others.png" alt="Marcador 4" class="marker marker4">
                <img src="assets/img/maps/Restaurants.png" alt="Marcador 5" class="marker marker5">
                <!-- Añade más marcadores según sea necesario -->
-           </div>
-      </main>
-      
+          </div>
+     </main>
+
 
      <!-- Footer de la página -->
      <footer class="footer custom-footer-raised">
@@ -156,25 +156,53 @@
      </footer>
 
 
-     
 
-<!-- Modal Número de Cliente -->
+
+     <!-- Modal Número de Cliente -->
+     <div id="miModal" class="modal-customer-form">
+          <a href="#" class="modal-overlay"></a>
+          <div class="modal-customer-form-content">
+               <span class="close" id="closeModal">&times;</span>
+               <div class="modal-header">Número de cliente</div>
+               <div class="modal-body">
+                    <p>Tu número de cliente lo puedes encontrar en:</p>
+                    <ul>
+                         <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
+                         <li>Pregunta a tu Promotor/Asesor.</li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+
+</body>
+
 <div id="miModal" class="modal-customer-form">
      <a href="#" class="modal-overlay"></a>
      <div class="modal-customer-form-content">
-         <span class="close" id="closeModal">&times;</span>
-         <div class="modal-header">Número de cliente</div>
+         <div class="drag-indicator"></div>
+         <div class="modal-header">Tu membresía</div>
          <div class="modal-body">
-             <p>Tu número de cliente lo puedes encontrar en:</p>
-             <ul>
-                 <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
-                 <li>Pregunta a tu Promotor/Asesor.</li>
-             </ul>
+             <div class="membership-card">
+                 <img src="ruta_a_tu_imagen_de_membresia.png" alt="Membresía Compartamos Banco">
+             </div>
+             <div class="membership-code">
+                 <h2>Tu código</h2>
+                 <div class="code-box">
+                     <p>Z8TVB3J8</p>
+                 </div>
+                 <p>Guarda la promoción en tu teléfono</p>
+             </div>
+             <div class="download-button">
+                 <button>Descargar</button>
+             </div>
+             <div class="terms-conditions">
+                 <h3>Términos y Condiciones</h3>
+                 <p>Válido del 13 de Noviembre de 2024 al 30 de octubre de 2025.</p>
+                 <p>Aplica en mensualidades. No aplica para otras promociones, descuentos o paquetes. Indispensable presentar membresía participante y promoción impresa o digital para validar el beneficio.</p>
+             </div>
          </div>
      </div>
  </div>
-
-</body>
 <!-- aqui va un scrtip el cual ayuda a cambiar el icono de menu por el close (x) para cerrar el sidebar, se elimina script -->
 <script>
      function toggleSidebar() {
