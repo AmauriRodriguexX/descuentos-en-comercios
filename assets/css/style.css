@@ -3510,7 +3510,7 @@ input[type="radio"] {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
     .customer-modal-full-page-content {
-        overflow-y: auto; /* Activa el desplazamiento en móviles */
+        overflow-y: hidden; /* Activa el desplazamiento en móviles */
     }
 }
 
@@ -3543,6 +3543,7 @@ input[type="radio"] {
 
 .p-box {
     margin: 0;
+    font-weight: 600;
 
 }
 
@@ -3556,6 +3557,7 @@ input[type="radio"] {
     font-size: 16px;
     color: #252A2D;
     margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .p-box-text {
@@ -3651,8 +3653,14 @@ input[type="radio"] {
 }
 
 
+/* Estilo base para escritorio */
 .top-content-header-img {
-    margin-top: 125px;
+    margin-top: 160px; /* Margen para escritorio */
 }
 
-
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) { /* Ajusta el punto de ruptura según tus necesidades */
+    .top-content-header-img {
+        margin-top: 280px; /* Margen ajustado para móviles */
+    }
+}
