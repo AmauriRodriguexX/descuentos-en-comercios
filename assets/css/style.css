@@ -3322,8 +3322,7 @@ input[type="radio"] {
     color: var(--bs-body-color);
     background-color: var(--bs-body-bg);
     border-color: transparent;
-    outline: 0;
-    box-shadow: 0 0 0  rgba(13, 109, 253, 0);
+    outline: 0; 
 }
 
 
