@@ -718,6 +718,9 @@ p {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* Ancho fijo para resoluciones mayores */
     height: 50px;
     border: none;
@@ -936,15 +939,12 @@ footer .container img {
 
 .modal-body img {
     display: block;
-    margin: 0 auto;
-    max-width: 65%;
+    max-width: 100%;
 }
 
 .modal-body span {
     text-align: center;
-    color: #847770;
     font-size: 16px;
-    display: block;
 }
 
 .btn.displayDownloadOptions img {
@@ -1028,8 +1028,7 @@ footer .container img {
         display: block;
     }
 
-    .modal-body img {
-        max-width: 100%;
+    .modal-body-1 img {
         width: 100%;
     }
 
@@ -3254,10 +3253,18 @@ input[type="radio"] {
     justify-content: center;
     padding: 0.5rem 0.5rem;
     height: 42px;
+    width: 45%;  /* Ancho para móviles por defecto */
     border-radius: 0.25rem;
     border: 1px solid #ced4da;
     position: relative;
     cursor: pointer;
+}
+
+/* Media query para pantallas mayores a 768px */
+@media (min-width: 768px) {
+    .custom-select-location {
+        width: auto;  /* Ancho ajusta al contenido automáticamente */
+    }
 }
 
 .custom-select-location select {
@@ -3308,4 +3315,265 @@ input[type="radio"] {
 .modal-chekecd-forms .checked-label {
     color: #CE0058;
     font-weight: 600;
+}
+
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0  rgba(13, 109, 253, 0);
+}
+
+
+/* Estilos básicos para el modal */
+.customer-modal-full-page {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    outline: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mostrar el modal cuando el enlace con el ID correspondiente es clickeado */
+.customer-modal-full-page:target {
+    display: flex;
+    opacity: 1;
+}
+
+/* Estilos generales del modal */
+.customer-modal-full-page-content {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #888;
+    font-size: 20px;
+    max-width: 360px;
+    position: relative;
+    overflow: hidden;  /* Impide scroll en el contenedor principal del modal */
+}
+.customer-modal-full-page:target .customer-modal-full-page-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* El overlay actuando como un enlace para cerrar el modal */
+.customer-modal-full-page .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Estilos para el contenido */
+.modal-header {
+    font-weight: bold;
+    margin-bottom: 24px;
+    display: block;
+}
+
+/* Ajustes para el cuerpo del modal */
+.modal-body {
+    overflow-y: auto !important;  /* Altura máxima antes de que el scroll se active, ajusta según necesidad */
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .customer-modal-full-page {
+        align-items: flex-end;
+    }
+
+    .customer-modal-full-page-content {
+        width: 100%;
+        max-width: none;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .customer-modal-full-page:target .customer-modal-full-page-content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .drag-indicator {
+        width: 80px;
+        height: 5px;
+        background-color: #9D9D9D;
+        border-radius: 270.5px;
+        margin: 10px auto;
+        margin-bottom: 32px;
+    }
+}
+
+/* Simular el gesto de deslizar hacia abajo */
+.customer-modal-full-page-content:active {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Botón de cerrar */
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+    font-size: 16px;
+}
+
+.modal-close .close-button {
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+}
+
+/* Estilos básicos para el modal */
+.customer-modal-full-page {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    outline: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-modal-full-page:target {
+    display: flex;
+    opacity: 1;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .customer-modal-full-page-content {
+        width: 100%;
+        max-width: none;
+        border-radius: 0px 0px 0 0;
+        position: fixed; /* Fija el modal en la posición sin scroll */
+        bottom: 0; /* Alinea el modal con la parte inferior de la pantalla */
+        height: 100vh; /* Altura completa de la vista */
+        overflow-y: hidden; /* Deshabilita scroll interno */
+    }
+}
+
+/* Ajustes para escritorio */
+@media (min-width: 769px) {
+    .customer-modal-full-page-content {
+        width: 80%;
+        border-radius: 20px;
+        max-width: 360px;
+        position: relative;
+        max-height: 680px; /* Altura máxima para escritorio */
+        overflow-y: hidden; /* Sin scroll interno */
+    }
+}
+
+.customer-modal-full-page-content {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #888;
+    font-size: 20px;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.customer-modal-full-page:target .customer-modal-full-page-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* El overlay actuando como un enlace para cerrar el modal */
+.customer-modal-full-page .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+.code-box {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    height: 58px;
+    border: 1px solid #AFB3B6;
+
+}
+
+.p-box {
+    margin: 0;
+
+}
+
+.p-box-small {
+    font-size: 16px;
+    color: #5E6A71;
+    margin-top: 16px;
+}
+
+.p-box-small-strong {
+    font-size: 16px;
+    color: #252A2D;
+    margin-top: 16px;
+}
+
+.p-box-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #252A2D;
+}
+
+.p-text-titlte {
+    font-size: 18px;
+    font-weight: 500;
+    color: #252A2D;
+    margin-top: 16px;
+}
+
+
+.download-button {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.download-button-modal-check {
+    width: 65%;
+    display: flex; /* Usa flexbox para manejar los elementos internos */
+    flex-direction: column; /* Alinea los elementos en una columna (uno sobre otro) */
+    align-items: center; /* Centra los botones horizontalmente */
+    justify-content: center; /* Centra los botones verticalmente (opcional) */
+    margin: auto; /* Centra el contenedor `.download-button-modal-check` horizontalmente dentro de su contenedor padre */
 }

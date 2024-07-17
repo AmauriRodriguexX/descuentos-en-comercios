@@ -6,19 +6,19 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="robots" content="noindex">
      <meta name="googlebot" content="noindex">
-     <title>Ofertas Despensa</title>
+     <title>Obtén descuentos exclusivos por ser cliente de Compartamos</title>
      <meta name="description"
-          content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
-     <meta name="keywords" content="Compartamos Banco">
-     <meta property="og:image" content="assets/img/logo_CB.png">
-     <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+          content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+     <meta name="keywords"
+          content="Compartamos Banco, descuentos, beneficios, ofertas, salud, educación, despensa, negocio">
+     <meta property="og:title" content="Obtén descuentos exclusivos por ser cliente de Compartamos">
      <meta property="og:description"
-          content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+          content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+     <meta property="og:image" content="https://www.compartamos.com.mx/assets/img/logo_CB.png">
      <meta property="og:type" content="website">
-     <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+     <meta property="og:url" content="https://www.compartamos.com.mx/descuentos-en-comercios">
      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
      <link href="assets/css/style.css?v=7" rel="stylesheet">
-     <link href="assets/css/icons-fonts.css" rel="stylesheet">
      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -55,7 +55,8 @@
                          </li>
                          <li class="nav-item transparent-border">
                               <a class="nav-link icon-list-link " href="tel:8002209000">
-                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span> 800-220-9000
+                                   <span class="material-symbols-outlined space-link-ico">phone_in_talk</span>
+                                   800-220-9000
                               </a>
                          </li>
                     </ul>
@@ -151,11 +152,12 @@
                                    </div>
                               </div>
                               <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
-                              <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                              <a class="btn-primary-small d-none d-md-inline-block" href="#miModal">Ver código</a>
+
                               <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
-                              <button class="d-md-none button-ico-act">
+                              <a class="d-md-none button-ico-act" href="#miModal">
                                    <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
-                              </button>
+                              </a>
                          </div>
                     </div>
                     <div class="container mt-3">
@@ -171,11 +173,11 @@
                                    </div>
                               </div>
                               <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
-                              <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                              <a class="btn-primary-small d-none d-md-inline-block" href="#miModal2">Ver código</a>
                               <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
-                              <button class="d-md-none button-ico-act">
+                              <a class="d-md-none button-ico-act" href="#miModal2">
                                    <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
-                              </button>
+                              </a>
                          </div>
                     </div>
                     <div class="container mt-3">
@@ -191,11 +193,11 @@
                                    </div>
                               </div>
                               <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
-                              <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                              <a class="btn-primary-small d-none d-md-inline-block">Ver código</a>
                               <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
-                              <button class="d-md-none button-ico-act">
+                              <a class="d-md-none button-ico-act">
                                    <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
-                              </button>
+                              </a>
                          </div>
                     </div>
                     <div class="container mt-3">
@@ -212,47 +214,90 @@
                                    </div>
                               </div>
                               <!-- Botón visible solo en pantallas medianas y más grandes (md y arriba) -->
-                              <button class="btn-primary-small d-none d-md-inline-block">Ver código</button>
+                              <a class="btn-primary-small d-none d-md-inline-block">Ver código</a>
                               <!-- Ícono visible solo en pantallas pequeñas (menos de md) -->
-                              <button class="d-md-none button-ico-act">
+                              <a class="d-md-none button-ico-act">
                                    <span class="material-symbols-outlined cb-color">arrow_forward_ios</span>
-                              </button>
+                              </a>
                          </div>
                     </div>
                </div>
           </div>
      </main>
-     <!-- Modal Membresía -->
-     
-     <a href="#miModal">
-          <img src="assets/img/icon/help-icon.png" alt="Ícono" class="img-fluid" width="16">
-     </a>
-     <!-- Modal Número de Cliente -->
-     <div id="miModal" class="modal-customer-form">
+     <!-- Modal Membresía box-->
+
+     <div id="miModal" class="customer-modal-full-page">
           <a href="#" class="modal-overlay"></a>
-          <div class="modal-customer-form-content">
-               <div class="drag-indicator"></div>
-               <div class="modal-header">Tu membresía</div>
-               <div class="modal-body">
+          <div class="customer-modal-full-page-content">
+               <div class="modal-close"><span class="material-symbols-outlined">
+                         close
+                    </span></div>
+               <div class="modal-header text-center">Tu membresía</div>
+               <div class="modal-body modal-body-1">
                     <div class="membership-card">
-                         <img src="ruta_a_tu_imagen_de_membresia.png" alt="Membresía Compartamos Banco">
+                         <img src="assets/img/descuentos/card.png" alt="Membresía Compartamos Banco">
                     </div>
                     <div class="membership-code">
-                         <h2>Tu código</h2>
+                         <p class="text-center p-text-titlte"><b>Tu código</b></p>
                          <div class="code-box">
-                              <p>Z8TVB3J8</p>
+                              <p class="p-box">Z8TVB3J8</p>
                          </div>
-                         <p>Guarda la promoción en tu teléfono</p>
+                         <p class="text-center p-box-small">Guarda la promoción en tu teléfono</p>
                     </div>
                     <div class="download-button">
-                         <button>Descargar</button>
+                         <button type="submit" class="btn-primary-small">
+                              Confirmar
+                              <span class="material-symbols-outlined icon-right ">download_2</span>
+                         </button>
                     </div>
                     <div class="terms-conditions">
-                         <h3>Términos y Condiciones</h3>
-                         <p>Válido del 13 de Noviembre de 2024 al 30 de octubre de 2025.</p>
-                         <p>Aplica en mensualidades. No aplica para otras promociones, descuentos o paquetes.
+                         <p class="p-box-small-strong text-center"><b>Términos y Condiciones</b></p>
+                         <h3></h3>
+                         <p class="p-box-text ">Válido del 13 de Noviembre de 2024 al 30 de octubre de 2025.</p>
+                         <p class="p-box-text ">Aplica en mensualidades. No aplica para otras promociones, descuentos o
+                              paquetes.
                               Indispensable presentar membresía participante y promoción impresa o digital para validar
                               el beneficio.</p>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div id="miModal2" class="customer-modal-full-page">
+          <a href="#" class="modal-overlay"></a>
+          <div class="customer-modal-full-page-content">
+               <div class="modal-close"><span class="material-symbols-outlined">
+                         close
+                    </span></div>
+               <div class="modal-header text-center">Tu membresía</div>
+               <div class="modal-body modal-body-1">
+                    <div class="membership-card">
+                         <img src="assets/img/descuentos/card.png" alt="Membresía Compartamos Banco">
+                    </div>
+                    <div class="membership-code">
+                         <p class="text-center p-text-titlte"><b>Tu código</b></p>
+                         <div class="code-box">
+                              <p class="p-box">Z8TVB3J8</p>
+                         </div>
+                         <p class="text-center p-box-small">Ingresa al sitio web para hacer válida tu promocion.</p>
+                    </div>
+                    <div class="download-button">
+                         <button type="submit" class="btn-primary-small">
+                              Ir al sitio web
+                              <span class="material-symbols-outlined icon-right ">arrow_forward</span>
+                         </button>
+                    </div>
+                    <div class="terms-conditions">
+                         <p class="p-box-small-strong text-center"><b>¿No cuentas con una tarjeta de débito para hacer
+                                   compras en línea?</b></p>
+
+                         <p class="p-box-text text-center">Tramita <a href="#" class="text-primary-link">Mis Ahorros
+                                   Compartamos</a> en tu Sucursal más cercana.</p>
+
+                         <p class="p-box-small-strong text-center"><b>Términos y Condiciones</b></p>
+                         <p class="p-box-text ">Válido del 13 de Noviembre de 2024 al 30 de octubre de 2025.</p>
+                         <p class="p-box-text ">Aplica en mensualidades. No aplica para otras promociones, descuentos o
+                              paquetes. Indispensable presentar membresía participante y promoción impresa o digital
+                              para validar el beneficio.</p>
                     </div>
                </div>
           </div>
@@ -280,6 +325,22 @@
                </div>
           </div>
      </footer>
+
+     <!-- Modal Número de Cliente -->
+     <div id="miModal" class="modal-customer-form">
+          <a href="#" class="modal-overlay"></a>
+          <div class="modal-customer-form-content">
+               <div class="drag-indicator"></div>
+               <div class="modal-header">Número de cliente</div>
+               <div class="modal-body">
+                    <p>Tu número de cliente lo puedes encontrar en:</p>
+                    <ul>
+                         <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
+                         <li>Pregunta a tu Promotor/Asesor.</li>
+                    </ul>
+               </div>
+          </div>
+     </div>
 </body>
 <!-- aqui va un scrtip el cual ayuda a cambiar el icono de menu por el close (x) para cerrar el sidebar, se elimina script -->
 <script>

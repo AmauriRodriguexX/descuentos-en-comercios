@@ -6,19 +6,19 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <meta name="robots" content="noindex">
      <meta name="googlebot" content="noindex">
-     <title>Descuentos cerca de mi</title>
+     <title>Obtén descuentos exclusivos por ser cliente de Compartamos</title>
      <meta name="description"
-          content="Conoce el baúl de los recuerdos y revive tus momentos. Gracias por formar parte de nuestros eventos en Compartamos Banco. ¡Mira la galería y disfrútala!.">
-     <meta name="keywords" content="Compartamos Banco">
-     <meta property="og:image" content="assets/img/logo_CB.png">
-     <meta property="og:title" content="Baúl de los recuerdos - Compartamos Banco">
+          content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+     <meta name="keywords"
+          content="Compartamos Banco, descuentos, beneficios, ofertas, salud, educación, despensa, negocio">
+     <meta property="og:title" content="Obtén descuentos exclusivos por ser cliente de Compartamos">
      <meta property="og:description"
-          content="Nos encantó que formaras parte de los eventos donde reconocemos tu compromiso. Checa nuestra galería y revive tus mejores momentos.">
+          content="Descubre los descuentos y beneficios de Compartamos Banco. Conoce las ofertas en salud, educación, despensa y recursos para tu negocio, ¡Aprovechalos!">
+     <meta property="og:image" content="https://www.compartamos.com.mx/assets/img/logo_CB.png">
      <meta property="og:type" content="website">
-     <meta property="og:url" content="https://www.compartamos.com.mx/baul-de-los-recuerdos">
+     <meta property="og:url" content="https://www.compartamos.com.mx/descuentos-en-comercios">
      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
      <link href="assets/css/style.css?v=7" rel="stylesheet">
-     <link href="assets/css/icons-fonts.css" rel="stylesheet">
      <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 
@@ -122,7 +122,8 @@
                <img src="assets/img/maps/maps.png" alt="Mapa Estático" class="map">
                <!-- Simula los marcadores -->
                <img src="assets/img/maps/Business.png" alt="Marcador 1" class="marker marker1">
-               <img src="assets/img/maps/Store.png" alt="Marcador 2" class="marker marker2">
+               <a href="#miModal"><img src="assets/img/maps/Store.png" alt="Marcador 2" class="marker marker2"></a>
+
                <img src="assets/img/maps/Health.png" alt="Marcador 3" class="marker marker3">
                <img src="assets/img/maps/Others.png" alt="Marcador 4" class="marker marker4">
                <img src="assets/img/maps/Restaurants.png" alt="Marcador 5" class="marker marker5">
@@ -163,46 +164,39 @@
           <a href="#" class="modal-overlay"></a>
           <div class="modal-customer-form-content">
                <span class="close" id="closeModal">&times;</span>
-               <div class="modal-header">Número de cliente</div>
                <div class="modal-body">
-                    <p>Tu número de cliente lo puedes encontrar en:</p>
-                    <ul>
-                         <li>En la APP Compartamos Móvil/ícono de menú en la parte superior izquierda.</li>
-                         <li>Pregunta a tu Promotor/Asesor.</li>
-                    </ul>
+                    <div class="d-flex justify-content-center">
+                         <span class="badge boni-badge-color">
+                              <img src="assets/img/icon/internet-icon.png" alt="Ícono" class="icono-badge">En tienda
+                         </span>
+
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+
+                         <img src="assets/img/descuentos/store logo.png" class="img-fluid img-thumbnail" alt="...">
+
+                    </div>
+                    <div class="download-button-modal-check ">
+                         <br>
+                         <button type="submit" class="btn-primary">
+                              <span class="material-symbols-outlined  md-24">sell</span>
+                              Ver ofertas
+                         </button>
+                         <button type="submit" class="btn-secondary">
+                              <span class="material-symbols-outlined  md-24">directions_alt</span>
+
+                              Cómo llegar
+                         </button>
+                    </div>
+
+
                </div>
           </div>
      </div>
 
 </body>
 
-<div id="miModal" class="modal-customer-form">
-     <a href="#" class="modal-overlay"></a>
-     <div class="modal-customer-form-content">
-         <div class="drag-indicator"></div>
-         <div class="modal-header">Tu membresía</div>
-         <div class="modal-body">
-             <div class="membership-card">
-                 <img src="ruta_a_tu_imagen_de_membresia.png" alt="Membresía Compartamos Banco">
-             </div>
-             <div class="membership-code">
-                 <h2>Tu código</h2>
-                 <div class="code-box">
-                     <p>Z8TVB3J8</p>
-                 </div>
-                 <p>Guarda la promoción en tu teléfono</p>
-             </div>
-             <div class="download-button">
-                 <button>Descargar</button>
-             </div>
-             <div class="terms-conditions">
-                 <h3>Términos y Condiciones</h3>
-                 <p>Válido del 13 de Noviembre de 2024 al 30 de octubre de 2025.</p>
-                 <p>Aplica en mensualidades. No aplica para otras promociones, descuentos o paquetes. Indispensable presentar membresía participante y promoción impresa o digital para validar el beneficio.</p>
-             </div>
-         </div>
-     </div>
- </div>
 <!-- aqui va un scrtip el cual ayuda a cambiar el icono de menu por el close (x) para cerrar el sidebar, se elimina script -->
 <script>
      function toggleSidebar() {
