@@ -3653,7 +3653,7 @@ input[type="radio"] {
 
 /* Estilo base para escritorio */
 .top-content-header-img {
-    margin-top: -27px; /* Margen para escritorio */
+    margin-top: 0px; /* Margen para escritorio */
 }
 
 
